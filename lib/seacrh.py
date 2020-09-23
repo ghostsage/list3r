@@ -29,7 +29,7 @@ try:
                         url=target+'/'+ char
                         r=requests.get(url)
                         if r.status_code==200 or r.status_code==403:
-                        print(Fore.BLUE,'[+] Found:',url)               
+                            print(Fore.BLUE,'[+] Found:',url)               
                 file.close()
 except requests.exceptions.ConnectionError:
-    print(Fore.RED,'[!] Invalid url!')
+    print(Fore.RED,'[!] Please check your url!')
