@@ -33,3 +33,5 @@ try:
                 file.close()
 except requests.exceptions.ConnectionError:
     print(Fore.RED,'[!] Please check your url!')
+except requests.exceptions.MissingSchema:
+    print(Fore.RED,'[!] Please check your url!')
