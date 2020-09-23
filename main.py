@@ -10,7 +10,7 @@ color=extra().pick_random(colors)
 try:
     subprocess.call('clear',shell=True)
     extra().print_cool_text(color,'List3r')
-    if len(sys.argv)<1:
+    if len(sys.argv)<2:
         extra().usage()
         sys.exit()
 
