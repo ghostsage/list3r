@@ -4,3 +4,4 @@
 <p>chmod +x install.sh && ./install.sh<p>
 <p>pip3 install -r requirements.txt</p>
 <p>python3 main.py (targeturl) </p>
+<p><strong>Note:</strong>the url shoould be in the form https/http</p>
