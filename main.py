@@ -15,7 +15,7 @@ try:
         sys.exit()
 
     target=sys.argv[1]
-    print(target)
+    print('[+] Target: ',target)
     wordlist_type=input("Enter the type of wordlist [s/m/l]: ")
     if wordlist_type.lower()=='s':
         wordlist='small'
