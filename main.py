@@ -16,16 +16,7 @@ try:
 
     target=sys.argv[1]
     print('[+] Target: ',target)
-    wordlist_type=input("Enter the type of wordlist [s/m/l]: ")
-    if wordlist_type.lower()=='s':
-        wordlist='small'
-    elif wordlist_type.lower()=='m':
-        wordlist='medium'    
-    elif wordlist_type.lower()=='l':
-        wordlist='large'    
-    else:
-        print(Fore.RED,'[!] Please type a valid argument!')    
-        exit()
+    wordlist='large'
     search().search(target,wordlist)
 except KeyboardInterrupt:
     print(Fore.RED,'[*] Quiting ...')    
