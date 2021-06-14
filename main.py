@@ -13,11 +13,10 @@ try:
     if len(sys.argv)<2:
         extra().usage()
         sys.exit()
-
     target=sys.argv[1]
     print('[+] Target: ',target)
     wordlist='large'
-    search().search(target,wordlist)
+    search(target)
 except KeyboardInterrupt:
     print(Fore.RED,'[*] Quiting ...')    
 except EOFError:
